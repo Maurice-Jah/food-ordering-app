@@ -1,0 +1,57 @@
+.wrapper {
+  background-color: var(--secondary-color);
+}
+
+.header {
+  &__time {
+    padding: 1.14286rem;
+    font-weight: 600;
+    font-size: 1.07143rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.3px;
+    color: var(--white-color);
+  }
+}
+
+.splash {
+  text-align: center;
+  &__img {
+    margin-top: 8rem;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 1.92857rem;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2.14286rem;
+    line-height: 3.21429rem;
+    letter-spacing: -0.3px;
+  }
+
+  &__btn {
+    margin-top: 3.92857rem;
+
+    a {
+      text-decoration: none;
+    }
+    &-order {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 7.14286rem;
+      width: 22.5rem;
+      height: 3.64286rem;
+      border: none;
+      font-weight: 600;
+      font-size: 1.14286rem;
+      line-height: 1.35714rem;
+      text-align: center;
+      color: var(--black-color);
+      opacity: 0.8;
+
+      &:hover {
+        background-color: var(--deep-yellow);
+        cursor: pointer;
+      }
+    }
+  }
+}

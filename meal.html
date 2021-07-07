@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Food Ordering App</title>
+  </head>
+  <body>
+    <section class="meal">
+      <p class="meal__time">9:41</p>
+      <div class="meal__image">
+        <img src="images/Rectangle 5.png" alt="meal" class="meal__selected" />
+        <div class="meal__image-back">
+          <a href="home.html">
+            <img src="images/back.svg" alt="back-icon" />
+          </a>
+        </div>
+        <div class="meal__image-favorite">
+          <a href="#">
+            <img src="images/heart-white.svg" alt="heart-icon" />
+          </a>
+        </div>
+      </div>
+
+      <div class="meal__header">
+        <p class="meal__header-title">
+          Veg Salad
+          <span class="icon"> <img src="images/dot.svg" alt="" /></span>
+        </p>
+
+        <div class="meal__header-action">
+          <a href="#"
+            ><img
+              src="images/minus-square.svg"
+              alt=""
+              class="img meal__header-action--minus"
+            />
+          </a>
+          <p class="meal__header-action--text">2</p>
+          <a href="#"
+            ><img
+              src="images/plus-square.svg"
+              alt=""
+              class="img meal__header-action--minus"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <p class="meal-price">$ 10.00</p>
+
+    <section class="recipe">
+      <p class="recipe__heading">Recipe</p>
+      <p class="recipe__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
+        hac et. <span class="more">more...</span>
+      </p>
+    </section>
+
+    <section class="location">
+      <div class="location__img">
+        <img
+          src="images/map-marker.svg"
+          alt="location-img"
+          class="location__img-pix"
+        />
+      </div>
+      <div class="location__text">
+        <p class="location__text-main">Location</p>
+        <p class="location__text-sub">Lorem ipsum dolor sit amet</p>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div class="delivery__img">
+        <img
+          src="images/clock.svg"
+          alt="delivery-img"
+          class="delivery__img-pix"
+        />
+      </div>
+      <div class="delivery__text">
+        <p class="delivery__text-main">Delivery Time</p>
+        <p class="delivery__text-sub">30 minutes</p>
+      </div>
+    </section>
+
+    <section class="summary meal-meal">
+      <p class="summary__items">2 items</p>
+      <p class="summary__total-price">$ <span class="total"> 27. </span> 00</p>
+    </section>
+  </body>
+</html>

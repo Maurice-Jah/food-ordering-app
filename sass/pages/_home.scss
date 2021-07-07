@@ -1,0 +1,237 @@
+body {
+  background-color: var(--primary-color);
+}
+
+.home-wrapper {
+  margin: 1.14286rem;
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.order-place {
+  margin-top: 1.35714rem;
+  &__dropdown {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      padding-bottom: 0.14286rem;
+      font-weight: 500;
+      font-size: 1.71429rem;
+      line-height: 2.57142rem;
+      letter-spacing: -0.3px;
+      color: var(--black-color);
+      opacity: 0.7;
+    }
+
+    &-icon {
+      margin-left: 1.35714rem;
+    }
+  }
+
+  &__sub {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 1.5rem;
+    letter-spacing: -0.3px;
+  }
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.35714rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__home {
+    padding: 1.42857rem 1.78571rem;
+    border: 0.14286rem solid var(--secondary-color);
+    border-radius: 8px;
+    position: relative;
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__favorite {
+    padding: 1.42857rem 1.78571rem;
+    border: 0.14286rem solid var(--light-gray);
+    border-radius: 0.57143rem;
+    position: relative;
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__filter {
+    padding: 1.42857rem 1.78571rem;
+    border: 0.14286rem solid var(--light-gray);
+    border-radius: 0.57143rem;
+    position: relative;
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__cart {
+    padding: 1.42857rem 1.78571rem;
+    border: 0.14286rem solid var(--light-gray);
+    border-radius: 0.57143rem;
+    position: relative;
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+// Dishes
+
+.dish {
+  margin-top: 1.07143rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  a {
+    text-decoration: none;
+  }
+  &__box3 {
+    position: relative;
+
+    .discount {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fd0000;
+      border-radius: 1.35714rem;
+      width: 5.21429rem;
+      height: 1.28571rem;
+
+      &__off {
+        font-size: 0.71429rem;
+        line-height: 1.07143rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        letter-spacing: -0.3px;
+        color: rgba(255, 255, 255, 0.92);
+      }
+    }
+  }
+
+  &__box1,
+  &__box2,
+  &__box3,
+  &__box4 {
+    border: 1px solid var(--light-gray);
+    border-radius: 1.07143rem;
+    width: 10rem;
+    height: 16.14286rem;
+    margin-bottom: 1.42858rem;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.57143rem;
+      margin-left: 0.85714rem;
+      margin-right: 0.85714rem;
+
+      &--favorite {
+        width: 1.07143rem;
+        height: 1.07143rem;
+      }
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 0.85714rem;
+      margin-right: 0.85714rem;
+
+      &-text {
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        &--main {
+          font-size: 0.85714rem;
+          line-height: 1.28571rem;
+          color: rgba(0, 0, 0, 0.65);
+        }
+
+        &--sub {
+          font-size: 1.28571rem;
+          line-height: 1.92857rem;
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}
+
+// Summary
+.summary {
+  background: var(--secondary-color);
+  border-radius: 0.71429rem 0.71429rem 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.14286rem;
+  padding: 1.42858rem;
+
+  &__items {
+    font-weight: 600;
+    font-size: 0.85714rem;
+    line-height: 1.28571rem;
+    letter-spacing: 0.18rem;
+    color: #fffbfb;
+  }
+
+  &__total-price {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.18em;
+    color: #fffbfb;
+
+    [class^="total"] {
+      font-weight: bold;
+      font-size: 1.28571rem;
+      line-height: 1.92857rem;
+    }
+  }
+}
